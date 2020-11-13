@@ -1,53 +1,18 @@
-<html>
-<head>	
-<script language=javascript>
-	setTimeout("document.MyMail.submit()",1)
-</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title></title>
 </head>
-<script>
-function GetSystem()		//获取当系统，Windows系统返回 0， Android 返回 1；
-{
-	var sUserAgent = navigator.userAgent.toLowerCase();
-	if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent))
-	{
-		IsAndroid=1;	//跳转移动端页面
-		}
-	else
-	{
-		IsAndroid=0;	//跳转pc端页面
-	}	
-	return IsAndroid;
-}
-var IsAndroid = GetSystem();
-//var IsAndroid = 0;
-</script>
-<script language=javascript>
-	setTimeout("document.MyMail.submit()",1)
-</script>
 
-<body>	
-<script>	
-	var	 AndroidString ="<form name='MyMail' action='https://m.exmail.qq.com/cgi-bin/login' method='post'>"
-	AndroidString = AndroidString + "<input type='hidden' value='xhtml' name='f'><\/input>"
-	AndroidString = AndroidString + "<input type='hidden' value='qe@jxust.net' name='uin'><\/input>"
-	AndroidString = AndroidString + "<input type='hidden' value='Jxust123' name='pwd'><\/input>"
-	AndroidString = AndroidString + "<input type='hidden' value='1' name='mss'><\/input> "
-	AndroidString = AndroidString + "<\/form>"
-	if(IsAndroid == 1) 	document.write(AndroidString);
-</script>	
-	
-<script>	
-	var	WindowString ="<form name='MyMail' action='https://exmail.qq.com/cgi-bin/login' method='post'>"
-	WindowString = WindowString + "<input type='hidden' value='false' name='firstlogin'><\/input>"
-	WindowString = WindowString + "<input type='hidden' value='dm_loginpage' name=/errtemplate/><\/input>"
-	WindowString = WindowString + "<input type='hidden' value='other' name='aliastype'><\/input>"
-	WindowString = WindowString + "<input type='hidden' value='bizmail' name='dmtype'><\/input>"
-	WindowString = WindowString + "<input type='hidden' value='' name='p'><\/input>"
-	WindowString = WindowString + "<input type='hidden' type='text' value='qe' name='uin'><\/input>"
-	WindowString = WindowString + "<input type='hidden' value='jxust.net' name='domain'><\/input>"
-	WindowString = WindowString + "<input type='hidden' type='password' value='Jxust123' name='pwd'><\/input>"
-	WindowString = WindowString + "<\/form>"
-	if(IsAndroid == 0) 	document.write(WindowString);
-</script>
+<frameset frameborder="no" framespacing="0" border="0" rows="0,*">
+  <frame name="head" src="about:blank" scrolling="no" noresize>
+  <frame name="main" src="https://seafile.jxust.edu.cn/d/1bcf87e7989345669dd8" scrolling="auto" noresize>
+<noframes>
+<body>
+<p>This page uses frames, but your browser doesnt support them.</p>
 </body>
+</noframes>
+</frameset>
+
 </html>
